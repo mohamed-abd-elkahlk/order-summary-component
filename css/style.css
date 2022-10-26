@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+}
+body p{
+    font-size: 16px;
+}
+main{
+    background-color: hsl(225, 100%, 98%);
+    background-image: cover;
+    border-radius: 15px;
+}
+main .img{
+    border-radius:15px ;
+}
+.contanier{
+    text-align: center;
+    padding: 10px 20px;
+    width: 450px;
+}
+.contanier h1{
+    margin: 0;
+}
+.contanier p{
+    color: hsl(223, 47%, 23%);
+    line-height: 1.8;
+    margin-top: 10px;
+}
+.contanier .audio{
+    position: relative;
+    margin-top: 20px;
+}
+.contanier .audio img{
+    position: absolute;
+    left: 20%;
+}
+.contanier .audio ul {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+}
+.input-div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction:column ;
+}
+input[value="Proceed to payment"]{
+    padding: 15px 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 18px; 
+    box-shadow: 2px 1px 8px 1px hsl(245, 75%, 52%);
+}
+input[value="Cancel Order"]{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    padding: 15px 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top:10px ;
+}
+input:hover{
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .contanier{
+        width: 380px;
+    }
+    main .img{
+        width: 380px;
+    }
+}
